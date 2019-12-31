@@ -1,12 +1,8 @@
 #!/bin/bash
-
 ## Usage: script-template.sh [options]
-##
 ##    options
-##
 ##       -e --example            Run example program
 ##       -h --help               This text
-##
 
 BASE=$(cd "$(dirname "$0")" || exit; pwd -P)
 
