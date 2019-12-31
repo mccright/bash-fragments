@@ -1,2 +1,2 @@
 # bash-fragments
-Fragments of bash scripts that I find of reoccurring use. Comments and improvements welcome.
+Fragments of [jotham/bash-fragments](https://github.com/jotham/bash-fragments) bash scripts that I find of reoccurring use.
