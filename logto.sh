@@ -21,6 +21,17 @@
 #   if [[ $ret -eq 1 ]] ; then
 #     echo "$HOME/bin/logto.sh not found. Exiting." ; exit $ret
 #   fi
+#   thisScript="${0}"
+# Here is some example usage:
+#   logTag="InScriptTesting"
+#   log "${0} - This is a test.  Logging an LOG message ${logTag}"
+#   logTag="NewSectionTesting"
+#   info "${0} - This is a test.  Logging an INFO message ${logTag}"
+#   logTag="EndOfNewSectionTesting"
+#   warn "${0} - This is a test.  Logging an WARN message ${logTag}"
+#   logTag="New function for input"
+#   error "${0} - This is a test.  Logging an ERROR message ${logTag}"
+#   debug "${0} - This is a test.  Logging an DEBUG message ${logTag}"
 #
 
 ## PROG is caller program
