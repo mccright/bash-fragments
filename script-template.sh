@@ -6,7 +6,8 @@
 
 BASE=$(cd "$(dirname "$0")" || exit; pwd -P)
 # Use our logging module -- 
-# The logging script must be in your path. Correct the path if needed for your environment.
+# The logging script must be in your path. 
+# Correct the path if needed for your environment.
 logscript=`which logto.sh`
 source $logscript ; ret=$?
 if [[ $ret -eq 1 ]] ; then
