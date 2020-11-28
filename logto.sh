@@ -51,8 +51,6 @@ myLogFile="${myLogDir}/${thisScript}-${TIMESTAMP}.log"
 function logToFile() {
   # log to syslog first
   logger -i -e -p syslog.$LVL -t ${logTag} -- "${1}"
-  # timeStamp=$(date "+%Y-%m-%d-%H:%M:%S %:z %Z")
-  # echo -e "${timeStamp} -- [INFO] ${thisScript}: ${1}" >> ${myLogFile}
   # Now log to your app-specific file
   echo -e "${1}" >> ${myLogFile}
   :
